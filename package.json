@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/Yx3ll/ar-business-card/issues"
   },
-  "homepage": "https://github.com/Yx3ll/ar-business-card#readme"
+  "homepage": "https://github.com/Yx3ll/ar-business-card#readme",
+  "type": "module"
 }
