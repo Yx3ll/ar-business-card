@@ -12,6 +12,11 @@ window.addEventListener('load', (event) => {
         });
     }
 
+    const techparty2018 = document.querySelector('#techparty-2018');
+    if (techparty2018) {
+        techparty2018.muted = true;
+    }
+
     const callButtonMro = document.querySelector('#call-button-mro');
     if (callButtonMro) {
         callButtonMro.addEventListener('click', function () {
