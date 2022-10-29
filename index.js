@@ -1,8 +1,14 @@
 window.addEventListener('load', (event) => {
-    let websitebutton = document.querySelector('#website-button');
+    const websitebutton = document.querySelector('#website-button');
     if (websitebutton) {
         websitebutton.addEventListener('click', function () {
             window.location.href = 'https://www.amexus.com/';
+        });
+    }
+    const mailtoButton = document.querySelector('#mailto-button');
+    if (mailtoButton) {
+        mailtoButton.addEventListener('click', function () {
+            window.open('mailto:info@amexus.com');
         });
     }
 
