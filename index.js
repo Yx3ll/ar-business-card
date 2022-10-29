@@ -34,6 +34,9 @@ window.addEventListener('load', (event) => {
         });
     }
 
+});
+
+window.addEventListener('DOMContentLoaded', (e) => {
     const video = document.querySelector('video');
     if (video) {
         video.style.width = '100%';
