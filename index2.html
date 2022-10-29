@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <a-scene mindar-image="imageTargetSrc: ./assets/jscmro/jscmro.mind;filterMinCF:0.0001; filterBeta: 0.001;" vr-mode-ui="enabled: false"
-    device-orientation-permission-ui="enabled: false">
+  <a-scene mindar-image="imageTargetSrc: ./assets/jscmro/jscmro.mind;filterMinCF:0.0001; filterBeta: 0.001;"
+    vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
     <a-assets>
       <img id="potter" src="./img/potter.gif">
     </a-assets>
@@ -23,23 +23,20 @@
       raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
     <a-entity mindar-image-target="targetIndex: 0">
-      <a-entity geometry="primitive:plane;" position="-.85 0 0" scale=".6 .55 1" material="shader:gif;src:#potter;"></a-entity>
-      <a-entity position=".7 .5 0">
-        <a-image id="call-button-mro" src="./img/call.png" position="0 0 .2" scale="0.4 0.4 1" class="clickable"></a-image>
-        <a-image id="mail-button-mro" src="./img/mail.png" position="0 -.5 .2" scale="0.4 0.4 1" class="clickable"></a-image>
+      <a-entity geometry="primitive:plane;" position="-.85 0 0" scale=".6 .55 1" material="shader:gif;src:#potter;">
       </a-entity>
-      <a-entity position="0 0 0">
-        <a-plane color="grey" position="0 0 .4" height="1" width="1" rotation="0 0 0"></a-plane>
-        <a-entity
-        position="1.7 .3 .7"
-        scale="3 3 3"
-        text="value: Illuminates the tip of the caster's wand, allowing the caster to see in the dark.;"
-      ></a-entity>
-      <a-entity
-        position="1.7 .4 .7"
-        scale="3 3 3"
-        text="value: LUMOS;"
-      ></a-entity>
+      <a-entity position=".7 .5 0">
+        <a-image id="call-button-mro" src="./img/call.png" position="0 0 .2" scale="0.4 0.4 1" class="clickable">
+        </a-image>
+        <a-image id="mail-button-mro" src="./img/mail.png" position="0 -.5 .2" scale="0.4 0.4 1" class="clickable">
+        </a-image>
+      </a-entity>
+      <a-entity position="0 -1 0">
+        <a-entity position="0 .6 .7" scale="2 2 2" text="value: Magic spell of the day:;align:center;"></a-entity>
+        <a-entity position="0 .2 .7" scale="2 2 2"
+          text="value: Illuminates the tip of the caster's wand, allowing the caster to see in the dark.;align:center;">
+        </a-entity>
+        <a-entity position="0 .4 .7" scale="3 3 3" text="value: LUMOS;align:center;"></a-entity>
       </a-entity>
     </a-entity>
     <a-entity mindar-image-target="targetIndex: 1">
