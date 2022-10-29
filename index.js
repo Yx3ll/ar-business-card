@@ -26,11 +26,10 @@ window.addEventListener('load', (event) => {
         });
     }
 
-    const mailButtonMro = document.querySelector('#amil-button-mro');
+    const mailButtonMro = document.querySelector('#mail-button-mro');
     if (mailButtonMro) {
         mailButtonMro.addEventListener('click', function () {
             console.log("mail button clicked");
-            // call MRO
             window.open('mailto:info@amexus.com');
         });
     }
