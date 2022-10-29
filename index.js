@@ -6,9 +6,18 @@ window.addEventListener('load', (event) => {
         });
     }
 
-    const callButton = document.querySelector('#call-button');
-    if (callButton) {
-        callButton.addEventListener('click', function () {
+    const callButtonMro = document.querySelector('#call-button-mro');
+    if (callButtonMro) {
+        callButtonMro.addEventListener('click', function () {
+            console.log("call button clicked");
+            // call MRO
+            window.open('tel:+4915122734511');
+        });
+    }
+
+    const mailButtonMro = document.querySelector('#amil-button-mro');
+    if (mailButtonMro) {
+        mailButtonMro.addEventListener('click', function () {
             console.log("call button clicked");
             // call MRO
             window.open('tel:+4915122734511');
