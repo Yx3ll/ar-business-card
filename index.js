@@ -16,8 +16,8 @@ window.addEventListener('load', (event) => {
     if (callButtonMro) {
         callButtonMro.addEventListener('click', function () {
             console.log("call button clicked");
-            // call MRO
-            window.open('tel:+4915122734511');
+            // Zeitansage der dt. Telekom anrufen (0,20€ pro Anruf)
+            window.open('tel:+491804100100');
         });
     }
 
