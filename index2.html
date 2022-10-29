@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>mro 9</title>
+    <title>mro 10</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
@@ -8,6 +8,7 @@
     <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
     <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
     <script src="./index.js"></script>
+
   </head>
   <body>
     <a-scene
@@ -19,7 +20,7 @@
       <img id="potter" src="./img/potter.gif">
     </a-assets>
 
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
         <a-entity geometry="primitive:plane;" position="0 .7 0" material="shader:gif;src:#potter;"></a-entity>
