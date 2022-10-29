@@ -6,8 +6,11 @@ window.addEventListener('load', (event) => {
         });
     }
 
-    document.querySelector('#call-button').addEventListener('click', function() {
-        console.log("call button clicked")
-        alert('call button clicked');
-    });
+    const callButton = document.querySelector('#call-button');
+    if (callButton) {
+        callButton.addEventListener('click', function () {
+            console.log("call button clicked")
+            alert('call button clicked');
+        });
+    }
 });
