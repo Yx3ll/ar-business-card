@@ -34,4 +34,11 @@ window.addEventListener('load', (event) => {
             window.open('mailto:info@amexus.com');
         });
     }
+
+    const video = document.querySelector('video');
+    if (video) {
+        video.style.width = '100%';
+        video.style.height = 'auto';
+        video.style.left = '0px';
+    }
 });
