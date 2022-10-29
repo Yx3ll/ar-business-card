@@ -9,8 +9,9 @@ window.addEventListener('load', (event) => {
     const callButton = document.querySelector('#call-button');
     if (callButton) {
         callButton.addEventListener('click', function () {
-            console.log("call button clicked")
-            alert('call button clicked');
+            console.log("call button clicked");
+            // call MRO
+            window.open('tel:+4915122734511');
         });
     }
 });
