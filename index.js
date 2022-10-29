@@ -33,7 +33,6 @@ window.addEventListener('load', (event) => {
             window.open('mailto:info@amexus.com');
         });
     }
-
 });
 
 window.addEventListener('DOMContentLoaded', (e) => {
